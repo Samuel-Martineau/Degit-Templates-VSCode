@@ -2,7 +2,9 @@
 	"name": "degit-templates",
 	"displayName": "Degit-Templates",
 	"description": "An extension that allows you to use Degit directly from Visual Studio Code",
+	"publisher": "samumartineau",
 	"version": "1.0.0",
+	"icon": "icon.png",
 	"engines": {
 		"vscode": "^1.36.0"
 	},
@@ -38,6 +40,10 @@
 				}
 			]
 		}
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Samuel-Martineau/Degit-Templates-VSCode.git"
 	},
 	"scripts": {
 		"vscode:prepublish": "yarn run compile",
