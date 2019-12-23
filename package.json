@@ -5,6 +5,7 @@
 	"publisher": "samumartineau",
 	"version": "1.0.0",
 	"icon": "icon.png",
+	"readme": "out/README.md",
 	"engines": {
 		"vscode": "^1.36.0"
 	},
@@ -46,9 +47,10 @@
 		"url": "git+https://github.com/Samuel-Martineau/Degit-Templates-VSCode.git"
 	},
 	"scripts": {
-		"vscode:prepublish": "yarn run compile",
+		"vscode:prepublish": "yarn run compile && yarn run create:readme",
 		"compile": "tsc -p ./",
-		"watch": "tsc -watch -p ./"
+		"watch": "tsc -watch -p ./",
+		"create:readme": "touch out/README.md && rm out/README.md && cat README.md >> out/README.md && echo \"\n\" >> out/README.md && cat CHANGELOG.md >> out/README.md"
 	},
 	"devDependencies": {
 		"@types/node": "^10.12.21",

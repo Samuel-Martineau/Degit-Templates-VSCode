@@ -15,9 +15,3 @@ This extension contributes the following settings:
 ## Known Issues
 
 - There's no known issues
-
-## Release Notes
-
-### 1.0.0
-
-Initial release of degit-templates
