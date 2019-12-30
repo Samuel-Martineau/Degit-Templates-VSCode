@@ -1,62 +1,62 @@
 {
-	"name": "degit-templates",
-	"displayName": "Degit-Templates",
-	"description": "An extension that allows you to use Degit directly from Visual Studio Code",
-	"publisher": "samumartineau",
-	"version": "1.0.3",
-	"icon": "images/icon.png",
-	"engines": {
-		"vscode": "^1.36.0"
-	},
-	"categories": [
-		"Other"
-	],
-	"activationEvents": [
-		"onCommand:extension.createProjectFromTemplate"
-	],
-	"main": "./out/extension.js",
-	"contributes": {
-		"commands": [
-			{
-				"command": "extension.createProjectFromTemplate",
-				"title": "Create Project From Template"
-			}
-		],
-		"configuration": {
-			"title": "degit-templates",
-			"properties": {
-				"degit-templates.templates": {
-					"type": "array",
-					"default": [],
-					"description": "The list of templates that you want to access easily"
-				}
-			}
-		},
-		"menus": {
-			"touchBar": [
-				{
-					"command": "extension.createProjectFromTemplate",
-					"group": "editing"
-				}
-			]
-		}
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/Samuel-Martineau/Degit-Templates-VSCode.git"
-	},
-	"scripts": {
-		"vscode:prepublish": "yarn run compile",
-		"compile": "tsc -p ./",
-		"watch": "tsc -watch -p ./"
-	},
-	"devDependencies": {
-		"@types/node": "^10.12.21",
-		"@types/vscode": "^1.36.0",
-		"tslint": "^5.12.1",
-		"typescript": "^3.3.1"
-	},
-	"dependencies": {
-		"degit": "^2.2.2"
-	}
+  "name": "degit-templates",
+  "displayName": "Degit-Templates",
+  "description": "An extension that allows you to use Degit directly from Visual Studio Code",
+  "publisher": "samumartineau",
+  "version": "1.0.4",
+  "icon": "images/icon.png",
+  "engines": {
+    "vscode": "^1.36.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:extension.createProjectFromTemplate"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.createProjectFromTemplate",
+        "title": "Create Project From Template"
+      }
+    ],
+    "configuration": {
+      "title": "degit-templates",
+      "properties": {
+        "degit-templates.templates": {
+          "type": "array",
+          "default": [],
+          "description": "The list of templates that you want to access easily"
+        }
+      }
+    },
+    "menus": {
+      "touchBar": [
+        {
+          "command": "extension.createProjectFromTemplate",
+          "group": "editing"
+        }
+      ]
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Samuel-Martineau/Degit-Templates-VSCode.git"
+  },
+  "scripts": {
+    "vscode:prepublish": "yarn run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/node": "^10.12.21",
+    "@types/vscode": "^1.36.0",
+    "tslint": "^5.12.1",
+    "typescript": "^3.3.1"
+  },
+  "dependencies": {
+    "degit": "^2.2.2"
+  }
 }
