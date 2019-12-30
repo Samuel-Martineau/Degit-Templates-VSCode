@@ -21,7 +21,7 @@ async function createTemplate() {
   let template = await window.showQuickPick(
     [...templates, 'Use Another Template'],
     {
-      placeHolder: 'Wich template do you want to use ?',
+      placeHolder: 'Which template do you want to use ?',
     },
   );
   if (!template) return window.showWarningMessage('Aborted !');
