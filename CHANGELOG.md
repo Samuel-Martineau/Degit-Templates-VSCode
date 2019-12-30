@@ -4,6 +4,12 @@ All notable changes to the "degit-templates" extension will be documented in thi
 
 <!-- ## [Unreleased] -->
 
+## [1.0.6] - 2019-12-30
+
+### Changed
+
+- [src/extension.ts](https://github.com/Samuel-Martineau/Degit-Templates-VSCode/blob/master/src/extension.ts) (Correction of spelling mistakes)
+
 ## [1.0.3] - 2019-12-23
 
 ### Changed
