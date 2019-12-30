@@ -46,7 +46,7 @@
     "url": "git+https://github.com/Samuel-Martineau/Degit-Templates-VSCode.git"
   },
   "scripts": {
-    "vscode:prepublish": "yarn run compile",
+    "vscode:prepublish": "npm run compile",
     "compile": "tsc -p ./",
     "watch": "tsc -watch -p ./"
   },
