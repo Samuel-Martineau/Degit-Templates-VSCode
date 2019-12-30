@@ -7,7 +7,7 @@ import * as degit from 'degit';
 export function activate(context: ExtensionContext) {
   let disposable = commands.registerCommand(
     'extension.createProjectFromTemplate',
-    createTemplate
+    createTemplate,
   );
 
   context.subscriptions.push(disposable);
@@ -21,21 +21,22 @@ async function createTemplate() {
   let template = await window.showQuickPick(
     [...templates, 'Use Another Template'],
     {
-      placeHolder: 'Wich template do you want to use ?'
-    }
+      placeHolder: 'Wich template do you want to use ?',
+    },
   );
   if (!template) return window.showWarningMessage('Aborted !');
   if (template === 'Use Another Template') {
     template = await window.showInputBox({
       placeHolder: 'Format: User/Repo',
-      validateInput: text => (/\w+\/\w+/.test(text) ? null : 'Invalid Format')
+      validateInput: (text) =>
+        /\w+\/\w+/.test(text) ? null : 'Invalid Format',
     });
     if (!template) return window.showWarningMessage('Aborted !');
   }
   const folder: Uri[] | undefined = await window.showOpenDialog({
     canSelectFolders: true,
     canSelectFiles: false,
-    canSelectMany: false
+    canSelectMany: false,
   });
   if (!folder) return window.showWarningMessage('Aborted !');
   const path = folder[0].fsPath;
@@ -46,7 +47,7 @@ async function createTemplate() {
   const d = degit(template, {
     cache: false,
     force: false,
-    verbose: false
+    verbose: false,
   });
   try {
     await d.clone(path);
