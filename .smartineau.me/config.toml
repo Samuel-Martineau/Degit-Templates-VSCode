@@ -1,0 +1,8 @@
+# Ce dossier est utilisé pour afficher ce projet sur mon site web (https://smartineau.me)
+# This folder is used to display this project on my website (https://smartineau.me)
+description = "Une extension VSCode qui permet d'utiliser Degit directement dans VSCode"
+etiquettes = ["ts", "vscode"]
+dossier = "/"
+url_site_web = "https://marketplace.visualstudio.com/items?itemName=samumartineau.degit-templates"
+contenu = "./article.md"
+date_de_creation = 2020-06-19T20:37:21.498Z
