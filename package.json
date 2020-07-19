@@ -3,7 +3,7 @@
   "displayName": "Degit-Templates",
   "description": "An extension that allows you to use Degit directly from Visual Studio Code",
   "publisher": "samumartineau",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "icon": "images/icon.png",
   "engines": {
     "vscode": "^1.36.0"
