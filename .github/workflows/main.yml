@@ -1,19 +1,20 @@
 on: [push]
 
-publish:
-  name: Release and publish
-  runs-on: ubuntu-18.04
-  steps:
-    - name: Checkout
-      uses: actions/checkout@v2
-    - name: Setup Node.js
-      uses: actions/setup-node@v1
-      with:
-        node-version: 12
-    - name: Install dependencies
-      run: npm install
-    - uses: JCofman/vscodeaction@master
-      env:
-        PUBLISHER_TOKEN: ${{ secrets.AZURE_PAT }}
-      with:
-        args: publish -p $PUBLISHER_TOKEN
+jobs:
+  publish:
+    name: Release and publish
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Setup Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12
+      - name: Install dependencies
+        run: npm install
+      - uses: JCofman/vscodeaction@master
+        env:
+          PUBLISHER_TOKEN: ${{ secrets.AZURE_PAT }}
+        with:
+          args: publish -p $PUBLISHER_TOKEN
