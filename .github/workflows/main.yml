@@ -1,3 +1,5 @@
+on: [push]
+
 publish:
   name: Release and publish
   runs-on: ubuntu-18.04
