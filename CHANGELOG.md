@@ -13,6 +13,7 @@ All notable changes to the "degit-templates" extension will be documented in thi
 ### Changed
 
 - [README.md](https://github.com/Samuel-Martineau/Degit-Templates-VSCode/blob/master/README.md) - Attempt at making in better
+- [package.json](https://github.com/Samuel-Martineau/Degit-Templates-VSCode/blob/master/package.json) - Upgraded the engine to match @types/vscode
 
 ## [1.0.6] - 2019-12-30
 
